@@ -1,0 +1,67 @@
+{
+  "badgeCount": 5,
+  "snapshotTitle": "Recent Signal Snapshot",
+  "snapshotSubtitle": "Most relevant recent imaging and laboratory activity",
+  "changesTitle": "Changes Since Last Review",
+  "footerNote": "Based on imaging and laboratory activity.",
+  "snapshotItems": [
+    {
+      "domain": "imaging",
+      "domainLabel": "Imaging",
+      "title": "CT Chest w/ Contrast report available",
+      "detail": "Final report posted today at 10:32 AM • ER • STAT priority",
+      "status": "Final",
+      "statusClass": "final"
+    },
+    {
+      "domain": "labs",
+      "domainLabel": "Lab",
+      "title": "WBC above reference range",
+      "detail": "16.8 K/uL • Collected today at 09:54 AM • Final result",
+      "status": "High",
+      "statusClass": "high"
+    },
+    {
+      "domain": "labs",
+      "domainLabel": "Lab",
+      "title": "Potassium below reference range",
+      "detail": "3.1 mmol/L • Collected today at 09:54 AM • Final result",
+      "status": "Low",
+      "statusClass": "low"
+    },
+    {
+      "domain": "imaging",
+      "domainLabel": "Imaging",
+      "title": "MRI Brain study still in progress",
+      "detail": "Imaging order acknowledged • Inpatient • ASAP priority",
+      "status": "In Progress",
+      "statusClass": "inprogress"
+    }
+  ],
+  "comparisonItems": [
+    {
+      "label": "WBC",
+      "previous": "11.2 K/uL",
+      "current": "16.8 K/uL",
+      "currentClass": "up"
+    },
+    {
+      "label": "Potassium",
+      "previous": "3.8 mmol/L",
+      "current": "3.1 mmol/L",
+      "currentClass": "down"
+    },
+    {
+      "label": "Troponin I",
+      "previous": "Preliminary",
+      "current": "Pending",
+      "currentClass": "neutral"
+    },
+    {
+      "label": "CT Chest report",
+      "previous": "Preliminary",
+      "current": "Final",
+      "currentClass": "neutral"
+    }
+  ]
+}

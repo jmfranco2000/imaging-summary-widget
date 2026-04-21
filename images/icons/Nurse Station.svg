@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Nurse_Station" data-name="Nurse Station" transform="translate(-0.272 -1.123)">
+    <rect id="Rectangle_1396" data-name="Rectangle 1396" width="75" height="75" transform="translate(0.272 1.124)" fill="none"/>
+    <g id="Group_2817" data-name="Group 2817" transform="translate(11.396 19.686)">
+      <g id="Group_2810" data-name="Group 2810" transform="translate(6.375 8.185)">
+        <g id="Group_2809" data-name="Group 2809">
+          <path id="Path_2862" data-name="Path 2862" d="M46.057,14.715A32.723,32.723,0,0,0,6.692,14.8a.8.8,0,0,0-.246.964L12.52,29.221a.794.794,0,0,0,.445.419.819.819,0,0,0,.281.05.81.81,0,0,0,.328-.071,31.24,31.24,0,0,1,25.592-.05.8.8,0,0,0,1.052-.4L46.3,15.68A.8.8,0,0,0,46.057,14.715ZM39.087,27.8a32.86,32.86,0,0,0-25.439.052L8.162,15.69a31.172,31.172,0,0,1,36.424-.078Z" transform="translate(-6.375 -8.185)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_2812" data-name="Group 2812" transform="translate(41.036 15.511)">
+        <g id="Group_2811" data-name="Group 2811" transform="translate(0)">
+          <path id="Path_2863" data-name="Path 2863" d="M31.887,13.345a.8.8,0,0,0-1.054.4l-.3.672a.8.8,0,0,0,1.454.656l.3-.674A.8.8,0,0,0,31.887,13.345Z" transform="translate(-30.459 -13.275)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_2814" data-name="Group 2814" transform="translate(37.291 18.858)">
+        <g id="Group_2813" data-name="Group 2813" transform="translate(0 0)">
+          <path id="Path_2864" data-name="Path 2864" d="M31.52,15.672a.8.8,0,0,0-1.054.4L27.926,21.7a.8.8,0,1,0,1.454.655l2.539-5.626A.8.8,0,0,0,31.52,15.672Z" transform="translate(-27.856 -15.601)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_2816" data-name="Group 2816" transform="translate(20.04 11.209)">
+        <g id="Group_2815" data-name="Group 2815">
+          <path id="Path_2865" data-name="Path 2865" d="M27.742,13.893H24.931V11.082a.8.8,0,0,0-.8-.8H20.275a.8.8,0,0,0-.8.8v2.811H16.666a.8.8,0,0,0-.8.8v3.86a.8.8,0,0,0,.8.8h2.812v2.811a.8.8,0,0,0,.8.8h3.859a.8.8,0,0,0,.8-.8V19.347h2.811a.8.8,0,0,0,.8-.8V14.69A.8.8,0,0,0,27.742,13.893Zm-.8,3.861H24.134a.8.8,0,0,0-.8.8v2.811H21.071V18.55a.8.8,0,0,0-.8-.8H17.463V15.487h2.812a.8.8,0,0,0,.8-.8V11.879h2.267V14.69a.8.8,0,0,0,.8.8h2.812Z" transform="translate(-15.87 -10.286)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

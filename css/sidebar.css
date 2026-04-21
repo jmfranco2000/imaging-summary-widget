@@ -1,0 +1,77 @@
+.submenu-bar {
+  width: 80px;
+  background-color: #C7CCCE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.button-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.submenu-button-wrap {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.submenu-button {
+  width: 80px;
+  height: 80px;
+  background-color: #C7CCCE;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  padding: 0;
+}
+
+.submenu-button:hover,
+.submenu-button-active {
+  background-color: #51BAE7;
+}
+
+.submenu-button img {
+  width: 40px;
+  height: 40px;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+  opacity: 0.82;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(11%) saturate(300%) hue-rotate(155deg) brightness(86%) contrast(84%);
+}
+
+.submenu-button:hover img,
+.submenu-button-active img {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.submenu-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #d9534f;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  pointer-events: none;
+}

@@ -1,0 +1,78 @@
+.widget {
+  display: none;
+  opacity: 0;
+  width: auto;
+  padding: 12px 14px;
+  background-color: var(--bg-widget);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  position: fixed;
+  align-items: center;
+  transition: opacity 0.25s ease;
+  z-index: 999;
+  border: 1px solid #edf1f5;
+}
+
+.widget-visible {
+  display: flex;
+  opacity: 1;
+}
+
+.widget-pointer {
+  position: absolute;
+  top: 28px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ffffff;
+  z-index: 1;
+}
+
+.playback-widget {
+  gap: 12px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.playback-logo {
+  width: 60px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.microphone-icon-container {
+  background-color: #043294;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.microphone-icon {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.prompt-text {
+  font-size: 13px;
+  color: #56616d;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.simple-widget {
+  gap: 10px;
+  min-width: 200px;
+}
+
+.simple-widget-text {
+  font-size: 14px;
+  color: #56616d;
+  font-weight: 500;
+}

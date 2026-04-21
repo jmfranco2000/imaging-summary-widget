@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stratumAi – Imaging Summary Proto</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/widgets.css">
+  <link rel="stylesheet" href="css/stratum.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="submenu-bar">
+    <div class="button-container">
+
+      <div class="submenu-button-wrap">
+        <button class="submenu-button" id="trigger-button" onclick="toggleWidget('recording-widget', this)" aria-label="Open Recording Widget">
+          <img src="images/Buttons/Playback-Cross-Logo.svg" alt="Playback" aria-hidden="true">
+        </button>
+      </div>
+
+      <div class="submenu-button-wrap">
+        <button class="submenu-button" id="vitals-button" onclick="toggleWidget('vitals-widget', this)" aria-label="Open Vitals Widget">
+          <img src="images/Buttons/vitals-icon.svg" alt="Vitals" aria-hidden="true">
+        </button>
+      </div>
+
+      <div class="submenu-button-wrap">
+        <button class="submenu-button" id="stratum-button" onclick="toggleWidget('stratum-widget', this)" aria-label="Open stratumAi Widget">
+          <img src="images/Buttons/stratumAi-icon.svg" alt="stratumAi" aria-hidden="true">
+        </button>
+        <span class="submenu-badge" id="stratum-badge" aria-hidden="true">5</span>
+      </div>
+
+      <div class="submenu-button-wrap">
+        <button class="submenu-button" id="dx-button" onclick="toggleWidget('dx-widget', this)" aria-label="Open Dx Widget">
+          <img src="images/Buttons/DX-icon.svg" alt="Dx" aria-hidden="true">
+        </button>
+      </div>
+
+      <div class="submenu-button-wrap">
+        <button class="submenu-button" id="allergies-button" onclick="toggleWidget('allergies-widget', this)" aria-label="Open Allergies Widget">
+          <img src="images/Buttons/allergies-icon.svg" alt="Allergies" aria-hidden="true">
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PLAYBACK -->
+  <div id="recording-widget" class="widget playback-widget" role="dialog" aria-label="Recording Widget">
+    <div class="widget-pointer"></div>
+    <img src="images/Logo/Playback-logo.svg" alt="Playback Logo" class="playback-logo" />
+    <div class="microphone-icon-container" role="button" aria-label="Start Recording" tabindex="0">
+      <i class="fas fa-microphone microphone-icon"></i>
+    </div>
+    <div class="prompt-text">Tap to Start Recording</div>
+  </div>
+
+  <!-- VITALS -->
+  <div id="vitals-widget" class="widget simple-widget" role="dialog" aria-label="Vitals Widget">
+    <div class="widget-pointer"></div>
+    <div class="simple-widget-text">Vitals Information</div>
+  </div>
+
+  <!-- STRATUM -->
+  <div id="stratum-widget" class="widget stratum-widget" role="dialog" aria-label="stratumAi Clinical Signals Widget">
+    <div class="widget-pointer"></div>
+
+    <div class="stratum-widget-inner">
+      <div class="stratum-header">
+        <div class="stratum-brand">
+          <img src="images/Logo/stratumAi-logo.svg" alt="stratumAi" class="stratum-logo">
+        </div>
+
+        <div class="header-actions" aria-label="Header actions">
+          <button class="header-icon-btn" type="button" onclick="openAboutModal()" aria-label="Open help">
+            <i class="fas fa-question"></i>
+          </button>
+          <button class="header-icon-btn" type="button" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="stratum-tabs">
+        <button class="stratum-tab active" type="button" data-panel="overview">Overview</button>
+        <button class="stratum-tab" type="button" data-panel="imaging">Imaging</button>
+        <button class="stratum-tab" type="button" data-panel="laboratory">Laboratory</button>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="stratum-panel active" id="panel-overview">
+        <div class="overview-grid">
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3 class="panel-title" id="snapshot-title">Recent Signal Snapshot</h3>
+              <div class="panel-subtitle" id="snapshot-subtitle">Most relevant recent imaging and laboratory activity</div>
+            </div>
+            <div class="panel-body">
+              <div class="snapshot-list" id="snapshot-list"></div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3 class="panel-title" id="changes-title">Changes Since Last Review</h3>
+            </div>
+            <div class="panel-body">
+              <div class="comparison-grid" id="comparison-grid"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-note" id="footer-note">Based on imaging and laboratory activity.</div>
+      </div>
+
+      <!-- IMAGING -->
+      <div class="stratum-panel" id="panel-imaging">
+        <div class="signal-column">
+          <div class="signal-column-header">
+            <div class="signal-column-title">
+              <span class="domain-pill imaging">Imaging</span>
+              <span id="imaging-column-title">Imaging Signals</span>
+            </div>
+            <span class="signal-column-count" id="imaging-column-count">RIS / PACS view</span>
+          </div>
+
+          <div class="signal-list" id="imaging-signal-list"></div>
+        </div>
+      </div>
+
+      <!-- LABORATORY -->
+      <div class="stratum-panel" id="panel-laboratory">
+        <div class="signal-column">
+          <div class="signal-column-header">
+            <div class="signal-column-title">
+              <span class="domain-pill labs">Laboratory</span>
+              <span id="lab-column-title">Laboratory Signals</span>
+            </div>
+            <span class="signal-column-count" id="lab-column-count">LIS / Lab view</span>
+          </div>
+
+          <div class="signal-list" id="lab-signal-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DX -->
+  <div id="dx-widget" class="widget simple-widget" role="dialog" aria-label="Dx Widget">
+    <div class="widget-pointer"></div>
+    <div class="simple-widget-text">Dx Information</div>
+  </div>
+
+  <!-- ALLERGIES -->
+  <div id="allergies-widget" class="widget simple-widget" role="dialog" aria-label="Allergies Widget">
+    <div class="widget-pointer"></div>
+    <div class="simple-widget-text">Allergies Information</div>
+  </div>
+
+  <!-- DETAIL MODAL -->
+  <div id="detail-modal" class="app-modal" aria-hidden="true">
+    <div class="app-modal-backdrop" onclick="closeDetailModal()"></div>
+    <div class="app-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-modal-title">
+      <div class="app-modal-header">
+        <div>
+          <h2 id="detail-modal-title" class="app-modal-title">Detail</h2>
+          <div id="detail-modal-subtitle" class="app-modal-subtitle"></div>
+        </div>
+        <button class="app-modal-close" type="button" onclick="closeDetailModal()" aria-label="Close detail modal">&times;</button>
+      </div>
+
+      <div class="app-modal-body">
+        <div id="detail-modal-section-label" class="app-modal-section-label">Content</div>
+        <div id="detail-modal-content" class="app-modal-content"></div>
+      </div>
+
+<div class="app-modal-footer">
+  <div class="app-modal-footnote">Source-aligned preview for prototype purposes.</div>
+</div>
+    </div>
+  </div>
+
+  <!-- ABOUT MODAL -->
+  <div id="about-modal" class="app-modal" aria-hidden="true">
+    <div class="app-modal-backdrop" onclick="closeAboutModal()"></div>
+    <div class="app-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <div class="app-modal-header">
+        <div>
+          <h2 id="about-modal-title" class="app-modal-title">About stratumAi</h2>
+        </div>
+        <button class="app-modal-close" type="button" onclick="closeAboutModal()" aria-label="Close about modal">&times;</button>
+      </div>
+
+      <div class="app-modal-body">
+        <div class="app-modal-section-label">What this view shows</div>
+        <div class="app-modal-content">
+          Recent imaging and laboratory activity organized for quick review from available source inputs.
+        </div>
+      </div>
+
+      <div class="app-modal-footer">
+        <div class="app-modal-footnote">Prototype help content.</div>
+        <div>
+          <button class="ghost-btn" type="button" onclick="closeAboutModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/widget-toggle.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
