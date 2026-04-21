@@ -1,0 +1,105 @@
+{
+  "title": "Imaging Signals",
+  "countLabel": "RIS / PACS view",
+  "items": [
+    {
+      "id": "ct-chest-contrast",
+      "domain": "imaging",
+      "domainLabel": "Imaging",
+      "name": "CT Chest w/ Contrast",
+      "status": "Final",
+      "statusClass": "final",
+      "badges": [
+        { "label": "New", "className": "new" },
+        { "label": "Report Ready", "className": "ready" },
+        { "label": "STAT", "className": "stat" }
+      ],
+      "meta": "CT • ER • Today 10:32 AM • Final report posted",
+      "subtitle": "CT • Final • Today 10:32 AM • ER • STAT",
+      "actions": [
+        {
+          "label": "View Report",
+          "variant": "primary",
+          "modal": {
+            "title": "CT Chest w/ Contrast",
+            "subtitle": "CT • Final • Today 10:32 AM • ER • STAT",
+            "sectionLabel": "Report",
+            "content": "EXAM:\nCT CHEST WITH CONTRAST\n\nFINDINGS:\nThere is a moderate right pleural effusion with adjacent compressive atelectatic change. No evidence of pneumothorax. Cardiomediastinal silhouette is within expected limits. Mild bibasilar linear opacity is present.\n\nIMPRESSION:\n1. Moderate right pleural effusion.\n2. Adjacent right basilar atelectatic change.\n3. No pneumothorax."
+          }
+        },
+        {
+          "label": "View Findings",
+          "variant": "secondary",
+          "modal": {
+            "title": "CT Chest w/ Contrast",
+            "subtitle": "CT • Final • Today 10:32 AM • ER • STAT",
+            "sectionLabel": "Findings",
+            "content": "There is a moderate right pleural effusion with adjacent compressive atelectatic change. No evidence of pneumothorax. Cardiomediastinal silhouette is within expected limits. Mild bibasilar linear opacity is present."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mri-brain",
+      "domain": "imaging",
+      "domainLabel": "Imaging",
+      "name": "MRI Brain",
+      "status": "In Progress",
+      "statusClass": "inprogress",
+      "badges": [
+        { "label": "New", "className": "new" },
+        { "label": "ASAP", "className": "priority" }
+      ],
+      "meta": "MRI • Inpatient • Today 08:45 AM • No final report yet",
+      "subtitle": "MRI • In Progress • Today 08:45 AM • Inpatient • ASAP",
+      "actions": [
+        {
+          "label": "View Details",
+          "variant": "primary",
+          "modal": {
+            "title": "MRI Brain",
+            "subtitle": "MRI • In Progress • Today 08:45 AM • Inpatient • ASAP",
+            "sectionLabel": "Order Details",
+            "content": "This study is currently in progress.\n\nORDER STATUS:\nImaging order acknowledged and being processed by radiology.\n\nNEXT STEP:\nReturn later to review report availability once finalized."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cxr-ap-lat",
+      "domain": "imaging",
+      "domainLabel": "Imaging",
+      "name": "Chest X-Ray AP/LAT",
+      "status": "Final",
+      "statusClass": "final",
+      "badges": [
+        { "label": "Report Ready", "className": "ready" },
+        { "label": "Routine", "className": "priority" }
+      ],
+      "meta": "XR • Outpatient • Today 07:58 AM • Final report available",
+      "subtitle": "XR • Final • Today 07:58 AM • Outpatient • Routine",
+      "actions": [
+        {
+          "label": "View Report",
+          "variant": "primary",
+          "modal": {
+            "title": "Chest X-Ray AP/LAT",
+            "subtitle": "XR • Final • Today 07:58 AM • Outpatient • Routine",
+            "sectionLabel": "Report",
+            "content": "EXAM:\nCHEST X-RAY AP/LAT\n\nFINDINGS:\nNo focal airspace consolidation. No pleural effusion or pneumothorax. Cardiac silhouette is not enlarged. Mild chronic hyperinflation is present.\n\nIMPRESSION:\nNo acute cardiopulmonary abnormality."
+          }
+        },
+        {
+          "label": "View Findings",
+          "variant": "secondary",
+          "modal": {
+            "title": "Chest X-Ray AP/LAT",
+            "subtitle": "XR • Final • Today 07:58 AM • Outpatient • Routine",
+            "sectionLabel": "Findings",
+            "content": "No focal airspace consolidation. No pleural effusion or pneumothorax. Cardiac silhouette is not enlarged. Mild chronic hyperinflation is present."
+          }
+        }
+      ]
+    }
+  ]
+}

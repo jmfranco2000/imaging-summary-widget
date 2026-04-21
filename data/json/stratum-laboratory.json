@@ -1,0 +1,94 @@
+{
+  "title": "Laboratory Signals",
+  "countLabel": "LIS / Lab view",
+  "items": [
+    {
+      "id": "wbc",
+      "domain": "labs",
+      "domainLabel": "Lab",
+      "name": "WBC",
+      "status": "High",
+      "statusClass": "high",
+      "badges": [
+        { "label": "New", "className": "new" },
+        { "label": "Abnormal", "className": "abnormal" },
+        { "label": "16.8 K/uL", "className": "high" }
+      ],
+      "meta": "CBC • Final • Reference 4.0 – 11.0 K/uL • Result posted 09:54 AM",
+      "subtitle": "WBC • 16.8 K/uL • Final • Today 09:54 AM • CBC",
+      "actions": [
+        {
+          "label": "View Result",
+          "variant": "primary",
+          "modal": {
+            "title": "WBC",
+            "subtitle": "WBC • 16.8 K/uL • Final • Today 09:54 AM • CBC",
+            "sectionLabel": "Result Detail",
+            "content": "White Blood Cell count is elevated above reference range.\n\nRESULT: 16.8 K/uL\nREFERENCE RANGE: 4.0 – 11.0 K/uL\nSTATUS: Final\n\nCOMMENT:\nElevated WBC may correlate with an infectious or inflammatory process. Clinical review recommended."
+          }
+        },
+        {
+          "label": "Open Laboratory Results",
+          "variant": "secondary",
+          "modal": {
+            "title": "Laboratory Results",
+            "subtitle": "LIS / Lab view",
+            "sectionLabel": "Navigation Note",
+            "content": "This prototype action represents navigation to the full laboratory results module."
+          }
+        }
+      ]
+    },
+    {
+      "id": "potassium",
+      "domain": "labs",
+      "domainLabel": "Lab",
+      "name": "Potassium",
+      "status": "Low",
+      "statusClass": "low",
+      "badges": [
+        { "label": "Abnormal", "className": "abnormal" },
+        { "label": "3.1 mmol/L", "className": "low" }
+      ],
+      "meta": "CMP • Final • Reference 3.5 – 5.1 mmol/L • Result posted 09:54 AM",
+      "subtitle": "Potassium • 3.1 mmol/L • Final • Today 09:54 AM • CMP",
+      "actions": [
+        {
+          "label": "View Result",
+          "variant": "primary",
+          "modal": {
+            "title": "Potassium",
+            "subtitle": "Potassium • 3.1 mmol/L • Final • Today 09:54 AM • CMP",
+            "sectionLabel": "Result Detail",
+            "content": "Potassium is below reference range.\n\nRESULT: 3.1 mmol/L\nREFERENCE RANGE: 3.5 – 5.1 mmol/L\nSTATUS: Final\n\nCOMMENT:\nLow potassium value may warrant review with current medications, fluid status, and clinical context."
+          }
+        }
+      ]
+    },
+    {
+      "id": "troponin",
+      "domain": "labs",
+      "domainLabel": "Lab",
+      "name": "Troponin I",
+      "status": "Pending",
+      "statusClass": "pending",
+      "badges": [
+        { "label": "Pending", "className": "priority" }
+      ],
+      "meta": "Cardiac • Processing • Collected 10:05 AM • Awaiting posted result",
+      "subtitle": "Troponin I • Pending • Collected 10:05 AM • Cardiac",
+      "actions": [
+        {
+          "label": "View Detail",
+          "variant": "primary",
+          "modal": {
+            "title": "Troponin I",
+            "subtitle": "Troponin I • Pending • Collected 10:05 AM • Cardiac",
+            "sectionLabel": "Order Detail",
+            "content": "Result is not yet available.\n\nORDER STATUS: Processing\nCOLLECTED: Today 10:05 AM\nCATEGORY: Cardiac\n\nNEXT STEP:\nReturn later to review finalized result."
+          }
+        }
+      ]
+    }
+  ]
+}

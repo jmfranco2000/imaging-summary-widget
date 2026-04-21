@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1464" data-name="Rectangle 1464" width="24.998" height="30" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="notification_bell_icon-default" transform="translate(17.499 6)">
+    <rect id="Rectangle_17195" data-name="Rectangle 17195" width="60" height="60" rx="5" transform="translate(-17.499 -6)" fill="none" opacity="0.5"/>
+    <g id="Notification_Bell_" data-name="Notification Bell " transform="translate(0 9)">
+      <g id="Group_2874" data-name="Group 2874" clip-path="url(#clip-path)">
+        <path id="Path_2909" data-name="Path 2909" d="M12.8,0a4.63,4.63,0,0,1,.473.253,1.286,1.286,0,0,1,.49,1.046c0,.361.007.723,0,1.084,0,.156.045.221.2.253a8.63,8.63,0,0,1,7.06,6.6,8.4,8.4,0,0,1,.24,2.2c.009,1.279-.051,2.559.029,3.836a8.1,8.1,0,0,0,2.731,5.662,2.513,2.513,0,0,1,.974,1.7A2.2,2.2,0,0,1,22.869,25c-.058,0-.117,0-.176,0H2.31A2.185,2.185,0,0,1,.061,23.3a2.154,2.154,0,0,1,.777-2.222,8.3,8.3,0,0,0,1.768-2.127,8.475,8.475,0,0,0,1.143-4.377c0-1.269-.033-2.54.029-3.806a8.439,8.439,0,0,1,3.154-6.25A8.346,8.346,0,0,1,11.018,2.64c.186-.031.243-.1.232-.286-.015-.253.013-.509-.007-.761A1.406,1.406,0,0,1,12.21,0Z" transform="translate(0)" fill="#fff"/>
+        <path id="Path_2910" data-name="Path 2910" d="M101.24,335.164h.265q4.3,0,8.608,0c.25,0,.307.04.233.3a4.694,4.694,0,0,1-9.086-.1,1.628,1.628,0,0,1-.02-.2" transform="translate(-93.314 -308.92)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

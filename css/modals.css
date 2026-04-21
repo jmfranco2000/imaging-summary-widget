@@ -1,0 +1,149 @@
+.app-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-modal.show {
+  display: flex;
+}
+
+.app-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 39, 52, 0.38);
+}
+
+.app-modal-dialog {
+  position: relative;
+  width: min(760px, calc(100vw - 48px));
+  max-height: calc(100vh - 48px);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 18px 48px rgba(17, 31, 44, 0.24);
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-modal-header {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid #e7edf2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.app-modal-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.app-modal-subtitle {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.app-modal-close {
+  border: none;
+  background: transparent;
+  color: #7d8792;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.app-modal-close:hover {
+  background: #f2f5f8;
+  color: #2d3f58;
+}
+
+.app-modal-close:active {
+  background: #e6ecf2;
+}
+
+.app-modal-body {
+  padding: 16px 20px;
+  overflow: auto;
+}
+
+.app-modal-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.app-modal-content {
+  background: #f8fbfd;
+  border: 1px solid #e3eaf0;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 13px;
+  color: #394957;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.app-modal-footer {
+  padding: 12px 20px 16px;
+  border-top: 1px solid #e7edf2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-modal-footnote {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+/* BUTTON SYSTEM */
+
+/* Base */
+.btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Ghost Button */
+.ghost-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2f99d3;
+  background: transparent;
+  border: none;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.ghost-btn:hover {
+  text-decoration: underline;
+}
+
+.ghost-btn:active {
+  background: #dde6ee;
+}
